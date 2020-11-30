@@ -3,8 +3,6 @@ const swapi = require('swapi-node');
 
 
 module.exports.getSwapi = async (event, context, callback) => {
-  //const page = req.params.page != null ? req.params.page : 1;
-  //const page = event.page
   const { page } = event.queryStringParameters
   const peoplesResult = await swapi
     .get(`https://swapi.dev/api/people/?page=${page}`)
