@@ -43,8 +43,8 @@ functions:
         path: /api/peoples
         method: get
         cors: true
-  getSwapi:
-    handler: handler.getSwapi
+  getSwapiPeoples:
+    handler: handler.getSwapiPeoples
     events:
       - http:
         path: /swapi/peoples/{page}
@@ -53,7 +53,18 @@ functions:
         request:
             parameters:
               paths:
-                page: 1
+                page: true
+  getSwapiPeople:
+    handler: handler.getSwapiPeople
+    events:
+      - http:
+        path: /swapi/people/{id}
+        method: get
+        cors: true
+        request:
+            parameters:
+              paths:
+                id: true
 #    vpc:
 #      securityGroupIds:
 #        - vpc aws
