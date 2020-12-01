@@ -32,5 +32,5 @@ module.exports = {
 + $ serverless invoke local -f getApiPeople --data '{ "queryStringParameters": {"id":"1"}}'       `// Lista los peoples de la tabla mysql/`
 
 
-[](https://subefotos.com/ver/?fe5e4ecb3eb12a175f7d52f4528edc5ao.png)
+[![](https://subefotos.com/ver/?fe5e4ecb3eb12a175f7d52f4528edc5ao.png)](https://subefotos.com/ver/?fe5e4ecb3eb12a175f7d52f4528edc5ao.png "李健首张专辑《似水流年》封面")
 
