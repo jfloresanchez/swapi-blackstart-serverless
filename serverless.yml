@@ -36,13 +36,9 @@ provider:
 #    Resource:
 #      - "*"
 functions:
-  getPeoples:
-    handler: handler.getPeoples
-    events:
-      - http:
-        path: /api/peoples
-        method: get
-        cors: true
+#####################        
+# Servicios a Swapi
+#####################
   getSwapiPeoples:
     handler: handler.getSwapiPeoples
     events:
@@ -59,6 +55,27 @@ functions:
     events:
       - http:
         path: /swapi/people/{id}
+        method: get
+        cors: true
+        request:
+            parameters:
+              paths:
+                id: true
+#####################        
+# Servicios a Mysql
+#####################
+  getApiPeoples:
+    handler: handler.getApiPeoples
+    events:
+      - http:
+        path: /api/peoples
+        method: get
+        cors: true
+  getApiPeople:
+    handler: handler.getApiPeople
+    events:
+      - http:
+        path: /api/peoples/{id}
         method: get
         cors: true
         request:
