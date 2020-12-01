@@ -32,5 +32,5 @@ module.exports = {
 + $ serverless invoke local -f getApiPeople --data '{ "queryStringParameters": {"id":"1"}}'       `// Lista los peoples de la tabla mysql/`
 
 
-https://drive.google.com/file/d/1J8uho2pUOEDrWXsYq1mjMPhHCgamooQ3/view?usp=sharing
+https://subefotos.com/ver/?fe5e4ecb3eb12a175f7d52f4528edc5ao.png
 
